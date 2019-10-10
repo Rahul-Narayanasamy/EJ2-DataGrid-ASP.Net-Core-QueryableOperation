@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div>
+    <ejs-grid id="Grid" height="273" allowPaging="true" allowSorting="true" allowFiltering="true">
+        <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
+        <e-grid-columns>
+            <e-grid-column field="CustomerID" headerText="Customer ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+            <e-grid-column field="ContactName" headerText="Contact Name" type="string" width="120"></e-grid-column>
+            <e-grid-column field="ContactTitle" headerText="ContactTitle" textAlign="Right" width="120"></e-grid-column>
+            <e-grid-column field="City" headerText="Ship City" width="150"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
